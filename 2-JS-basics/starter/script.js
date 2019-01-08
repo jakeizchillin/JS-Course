@@ -102,8 +102,29 @@ console.log(x);
 
 */
 
+/****************************
+ *  Coding Challenge 1 
 
 
+ var markMass, markHeight, markBMI, johnMass, johnHeight, johnBMI;
 
+ markMass = 60;
+ markHeight = 2;
+ johnMass = 55;
+ johnHeight = 1.8;
 
+ markBMI = markMass / markHeight**2
 
+ johnBMI = johnMass / johnHeight**2
+
+var markGreater = markBMI > johnBMI;
+
+console.log('Is Mark\'s BMI higher thank John\'s? ' + markGreater);
+
+ */
+
+ /******************************
+  *  If / else statements
+  */
+
+  
