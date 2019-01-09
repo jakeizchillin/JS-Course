@@ -125,6 +125,57 @@ console.log('Is Mark\'s BMI higher thank John\'s? ' + markGreater);
 
  /******************************
   *  If / else statements
-  */
+ 
 
-  
+  var firstName = 'John';
+  var civilStatus = 'single';
+
+  if (civilStatus === 'married') {
+    console.log(firstName +  ' is married!');
+  } else {
+    console.log(firstName + ' will hopefully marry soon :)');
+  }
+
+  var isMarried = true;
+  if (isMarried) {
+    console.log(firstName +  ' is married!');
+  } else {
+    console.log(firstName + ' will hopefully marry soon :)');
+  }
+
+  var markMass, markHeight, markBMI, johnMass, johnHeight, johnBMI;
+
+  markMass = 60;
+  markHeight = 2;
+  johnMass = 55;
+  johnHeight = 1.8;
+ 
+  markBMI = markMass / markHeight**2
+ 
+  johnBMI = johnMass / johnHeight**2
+ 
+ // var markGreater = markBMI > johnBMI;
+// console.log('Is Mark\'s BMI higher thank John\'s? ' + markGreater);
+
+if (markBMI > johnBMI) {
+    console.log('Mark\'s BMI is greater than John\'s.');
+} else {
+    console.log('John\'s BMI is greater than Mark\'s.');
+}
+
+*/
+
+/***************
+* Boolean logic
+*/
+
+var firstName = 'John';
+var age = 16;
+
+if (age < 13) {
+    console.log(firstName + ' is a boy.');
+} else if (age >= 13 && age < 20) { // Between 13 and 20
+    console.log(firstName + ' is a teenager.');
+} else {
+    console.log(firstName + ' is a man.');
+}
