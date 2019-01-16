@@ -215,7 +215,7 @@ if (age < 13) {
 /****************************
  *  Function Statements and Expressions
  * 
- */
+ 
 
  // function declaration
  // function whatDoYouDo(job, firstName) {}
@@ -237,3 +237,5 @@ if (age < 13) {
   console.log(whatDoYouDo('teacher', 'John'));
   console.log(whatDoYouDo('designer', 'Jane'));
   console.log(whatDoYouDo('retired', 'Mark'));
+
+  */
