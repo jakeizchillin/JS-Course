@@ -266,7 +266,7 @@ if (height ==='23') {
 
 /*****************************
  * Coding challenge 2 
- */
+
 var john1, john2, john3, mike1, mike2, mike3, mary1, mary2, mary3, johnAvg, mikeAvg, maryAvg;
 john1 = 89;
 john2 = 120;
@@ -352,3 +352,39 @@ if (mikeAvg > johnAvg && mikeAvg > maryAvg) {
 
   */
 
+/***************************
+* Arrays 
+
+
+// Initialize Array
+var names = ['John', 'Mark', 'Jane'];
+var years = new Array(1990, 1969, 1948);
+
+console.log(names[2]);
+console.log(names.length);
+
+// Mutate Array
+names[1] = 'Ben';
+//names[5] = 'Mary';
+names[names.length] = 'Mary';
+console.log(names);
+
+// Different data types
+
+var john = ['John', 'Smith', 1990, 'designer', false];
+
+john.push('blue');
+john.unshift('Mr.');
+console.log(john);
+
+john.pop();
+john.pop();
+john.shift();
+console.log(john);
+
+// console.log(john.indexOf(1990));
+console.log(john.indexOf(23)); // returns -1 since it's not there, good test
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer.' : 'John IS a designer';
+console.log(isDesigner);
+*/
