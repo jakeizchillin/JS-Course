@@ -167,7 +167,6 @@ if (markBMI > johnBMI) {
 
 /***************
 * Boolean logic
-*/
 
 var firstName = 'John';
 var age = 16;
@@ -179,3 +178,135 @@ if (age < 13) {
 } else {
     console.log(firstName + ' is a man.');
 }
+
+/**********
+ * The ternary operator
+
+
+ var firstName = 'John';
+ var age = 19;
+
+//condition ? if block : else block
+age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + ' drinks juice.');
+
+var drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
+
+// if else statement of above
+/* if (age > = 18) {
+    var drink = 'beer';
+} else {
+    var drink = 'juice';
+}
+
+// Switch statement 
+var job = 'cop';
+switch (job) {
+    case 'teacher' :
+    case 'instructor' :
+        console.log(firstName + ' teaches kids how to code.');
+        break;
+    case 'driver' :
+        console.log(firstName + ' drives an uber in Lisbon.');
+        break;
+    case 'designer':
+        console.log(firstName + ' designs beautiful websites.');
+        break;
+    default:
+        console.log(firstName + ' does something else.');
+}
+
+switch (true) {
+    case age < 13:
+        console.log(firstName + ' is a boy.');
+        break;
+    case age >= 13 && age < 20:
+        console.log(firstName + ' is a teenager.');
+        break;
+    default:
+        console.log(firstName + ' is a man.');
+}
+
+var firstName = 'John';
+var age = 16;
+
+if (age < 13) {
+    console.log(firstName + ' is a boy.');
+} else if (age >= 13 && age < 20) { // Between 13 and 20
+    console.log(firstName + ' is a teenager.');
+} else {
+    console.log(firstName + ' is a man.');
+}
+*/
+
+/**************************
+ *  Truthy and Falsy valudes and equality operators
+ 
+
+ // falsy values: undefined, null, 0, '', NaN - false we evaluated in if/else statement
+ // truthy : not falsy values
+
+ var height;
+
+ height = 23;
+
+ if (height || height === 0) {
+     console.log('Variable is defined');
+ } else {
+     console.log('The variable has not been defined');
+ }
+
+// Equality operators
+if (height ==='23') {
+    console.log('The === operator does type coercion!');
+}
+
+*/
+
+/*****************************
+ * Coding challenge 2 
+ */
+var john1, john2, john3, mike1, mike2, mike3, mary1, mary2, mary3, johnAvg, mikeAvg, maryAvg;
+john1 = 89;
+john2 = 120;
+john3 = 100;
+mike1 = 116;
+mike2 = 94;
+mike3 = 123;
+mary1 = 97;
+mary2 = 134;
+mary3 = 105;
+
+
+johnAvg = (john1 + john2 + john3) / 3;
+mikeAvg = (mike1 + mike2 + mike3) / 3;
+maryAvg = (mary1 + mary2 + mary3) / 3;
+
+if (mikeAvg > johnAvg && mikeAvg > maryAvg) {
+    console.log('Mike\'s team has the highest average score');
+} else if (johnAvg > mikeAvg && johnAvg > maryAvg) { 
+    console.log('John\'s team has the highest average score');
+} else if (maryAvg > johnAvg && maryAvg > mikeAvg) {
+    console.log('Mary\'s team has the highest average score');
+} else {
+    console.log('Equal average scores.')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
