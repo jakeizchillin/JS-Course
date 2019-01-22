@@ -388,3 +388,46 @@ console.log(john.indexOf(23)); // returns -1 since it's not there, good test
 var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer.' : 'John IS a designer';
 console.log(isDesigner);
 */
+
+/****************************
+ * Coding Challenge 3 
+
+var bills = [124, 48, 268];
+
+ // Tip function
+
+ function tipCalc(bill) {
+     if (bill < 50) {
+        return bill * .20;
+     } else if (bill >= 50 && bill <= 200) {
+        return bill * .15;
+     } else {
+        return bill * .1;
+     }
+ }
+
+ var tips = [];
+
+ var total = [];
+
+ tips.push(tipCalc(bills[0]), tipCalc(bills[1]), tipCalc(bills[2]));
+ console.log(tips);
+
+ total.push((tips[0] + bills[0]), (tips[1] + bills[1]), (tips[2] + bills[2]));
+ console.log(total);
+
+*/
+
+/************************
+ *  Objects and properties
+ */
+
+
+
+
+
+
+
+
+ 
+
