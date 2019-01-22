@@ -420,14 +420,44 @@ var bills = [124, 48, 268];
 
 /************************
  *  Objects and properties
- */
-
-
-
-
-
-
-
-
  
+
+ var john = {
+     firstName: 'John',
+     lastName: 'Smith',
+     birthYear: 1990,
+     family: ['Jane', 'Mark', 'Bob', 'Emily'],
+     job: 'teacher',
+     isMarried: false
+ }; //object literal
+
+ console.log(john);
+ console.log(john.firstName);
+ console.log(john['lastName']);
+ var x = 'birthYear';
+ console.log(john[x]);
+
+ //mutate object
+
+ john.job = 'designer';
+ john['isMarried'] = true;
+ console.log(john);
+
+ // create object - new object syntax
+
+ var jane = new Object();
+ jane.name = 'Jane';
+ jane.birthYear = 1969;
+ jane['lastName'] = 'Smith';
+ console.log(jane);
+*/
+
+
+
+
+
+
+
+
+
 
