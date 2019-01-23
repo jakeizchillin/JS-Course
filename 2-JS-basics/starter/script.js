@@ -454,7 +454,7 @@ var bills = [124, 48, 268];
 
 /*******************
  *  Objects and Methods
- */
+ 
 
 var john = {
     firstName: 'John',
@@ -473,6 +473,43 @@ var john = {
 
 john.calcAge()  // store result into john object
 console.log(john);
+*/
+/******************
+ * Coding Challenge 4
+ */
+
+var john = {
+    fullName: 'John',
+    mass: 88,
+    height: 2,
+    calcBMI: function() {
+        this.bmi = this.mass / (this.height ** 2);
+        return this.bmi;
+    }
+};
+
+//console.log(john);
+
+var mark = {
+    fullName: 'Mark',
+    mass: 88,
+    height: 2,
+    calcBMI: function() {
+        this.bmi = this.mass / (this.height ** 2);
+        return this.bmi;
+    }
+};
+
+// need to call method to calculate the BMI mark.calcBMI()
+
+if (john.calcBMI() === mark.calcBMI()) {
+    console.log('John and Mark\'s BMI is the same at ' + john.bmi + '.');
+} else if (john.bmi > mark.bmi) {
+    console.log('John\'s BMI is greater than Mark\'s at ' + john.bmi + '.');
+} else {
+    console.log('Mark\'s BMI is greater than John\'s at ' + mark.bmi + '.');
+}
+
 
 
 
