@@ -452,6 +452,28 @@ var bills = [124, 48, 268];
  console.log(jane);
 */
 
+/*******************
+ *  Objects and Methods
+ */
+
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1992,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false,
+    calcAge: function() { /////// function is a method of john object
+        // return 2018 - this.birthYear;
+        this.age = 2018 - this.birthYear; // this.age adds to john object
+    }
+};
+
+//console.log(john.calcAge());  //this.birthYear is the argument
+
+john.calcAge()  // store result into john object
+console.log(john);
+
 
 
 
