@@ -535,7 +535,7 @@ while (i > john.length) {
     i++;
 }
 */
-// continue and break statements
+/* continue and break statements
 var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
 /*
 for (var i = 0; i < john.length; i++) {
@@ -555,26 +555,81 @@ for (var i = john.length - 1; i >= 0; i--) {
 }
 */
 
+/************************
+ * Coding challenge 5
+ */
 
+var john = {
+    name: 'John',
+    bills: [124, 48, 268, 180],
+    calcTips: function() {
+        this.tips = [];
+        this.total = [];
 
+        for (var i = 0; i < this.bills.length; i++) {
+            var percentage;
+            var bill = this.bills[i];
 
+            if (bill < 50) {
+                percentage = .2;
+            } else if (bill >= 50 && bill < 200) {
+                percentage = .15;
+            } else {
+                percentage = .1;
+            }
 
+            this.tips[i] = bill * percentage;
+            this.total[i] = bill + bill + percentage;
+        }
+    }
+}
 
+var mark = {
+    name: 'Mark',
+    bills: [77, 375, 110, 45],
+    calcTips: function() {
+        this.tips = [];
+        this.total = [];
 
+        for (var i = 0; i < this.bills.length; i++) {
+            var percentage;
+            var bill = this.bills[i];
 
+            if (bill < 100) {
+                percentage = .2;
+            } else if (bill >= 100 && bill < 300) {
+                percentage = .1;
+            } else {
+                percentage = .25;
+            }
 
+            this.tips[i] = bill * percentage;
+            this.total[i] = bill + bill + percentage;
+        }
+    }
+}
 
+function calcAverage(tips) {
+    var sum = 0;
+    for (var i = 0; i < tips.length; i++) {
+        sum = sum + tips[i];
+    }
+    return sum / tips.length;
+}
 
+john.calcTips();
+mark.calcTips();
 
+john.average = calcAverage(john.tips);
+mark.average = calcAverage(mark.tips);
 
+console.log(john.average);
+console.log(mark.average);
 
-
-
-
-
-
-
-
-
-
-
+if (john.average > mark.average) {
+    console.log(john.name + '\'s family tipped more than ' + mark.name + '\'s family.');
+} else if (john.average < mark.average) {
+    console.log(mark.name + '\'s family tipped more than ' + john.name + '\'s family.');
+} else {
+    console.log(john.name + '\'s family and ' + mark.name + '\'s family tipped the same');
+}
