@@ -557,7 +557,7 @@ for (var i = john.length - 1; i >= 0; i--) {
 
 /************************
  * Coding challenge 5
- */
+
 
 var john = {
     name: 'John',
@@ -633,3 +633,4 @@ if (john.average > mark.average) {
 } else {
     console.log(john.name + '\'s family and ' + mark.name + '\'s family tipped the same');
 }
+*/
