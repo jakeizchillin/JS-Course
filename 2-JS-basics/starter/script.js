@@ -558,7 +558,6 @@ for (var i = john.length - 1; i >= 0; i--) {
 /************************
  * Coding challenge 5
 
-
 var john = {
     name: 'John',
     bills: [124, 48, 268, 180],
@@ -633,4 +632,3 @@ if (john.average > mark.average) {
 } else {
     console.log(john.name + '\'s family and ' + mark.name + '\'s family tipped the same');
 }
-*/
