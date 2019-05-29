@@ -108,3 +108,22 @@ x-- ;
 console.log(x);
 
 */
+
+/**
+ * Coding challenge 1
+ */
+
+var markHeight, markWeight, johnHeight, johnWeight, markBMI, johnBMI, markGreater;
+
+markHeight = 2.0;
+markWeight = 55;
+johnHeight = 1.8;
+johnWeight = 54;
+
+markBMI = markWeight / (markHeight * markHeight);
+johnBMI = johnWeight / (johnHeight * johnHeight);
+
+markGreater = markBMI > johnBMI;
+
+console.log(markBMI, johnBMI);
+console.log('Is Mark\'s BMI highter than John\'s? ' + markGreater);
