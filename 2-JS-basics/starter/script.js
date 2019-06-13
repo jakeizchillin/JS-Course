@@ -172,7 +172,7 @@ console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
 
 /**
  *  16 Ternary operator
- */
+
 
  var firstName = 'John';
  var age = 22;
@@ -191,7 +191,7 @@ console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
  */
 
  // Switch statement
-
+/** 
  var job = 'cop';
  switch (job) {
    case 'teacher' :
@@ -220,3 +220,31 @@ console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
     default:
       console.log(firstName + ' is a man');
   }
+  */
+
+  /***
+   * 17 Truthy and false values and equality
+   * 
+   
+
+   // falsy is undefined, null, 0, '', NaN
+   // truthy anything NOT falsy
+
+   var height;
+
+   height = 0;
+
+   if (height || height === 0) {
+     console.log('Variable is defined.');
+   } else {
+     console.log('Variable is not defined');
+   }
+// Equality oerators
+if (height == '23') {
+  console.log('The == operator does type coercion!');
+}
+*/
+
+/**
+ * Coding Challenge 2
+ */
