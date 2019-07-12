@@ -248,3 +248,28 @@ if (height == '23') {
 /**
  * Coding Challenge 2
  */
+
+ var j1, j2, j3, m1, m2, m3, my1, my2, my3;
+ j1 = 89;
+ j2 = 120;
+ j3 = 150;
+ m1 = 100;
+ m2 = 94;
+ m3 = 123;
+ my1 = 120;
+ my2 = 134;
+ my3 = 140;
+
+ var jAverage = (j1 + j2 + j3)/3;
+ var mAverage = (m1 + m2 + m3)/3;
+ var myAverage = (my1 + my2 + my3)/3;
+
+ if (jAverage > mAverage && jAverage > myAverage) {
+    console.log('John\'s team has the higher average score with ' + jAverage);
+ } else if (mAverage > jAverage && mAverage > myAverage) {
+    console.log('Mike\'s team has the higher average score with ' + mAverage);
+ } else if (myAverage > jAverage && myAverage > mAverage) {
+    console.log('Mary\'s team has the higher average score with ' + myAverage);
+ } else {
+    console.log('John, Mary, and Mike\'s team have the same average scores with ' + jAverage);
+ }
