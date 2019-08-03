@@ -343,3 +343,85 @@ console.log(whatDoYouDo('teacher', 'John'));
 console.log(whatDoYouDo('designer', 'Jane'));
 console.log(whatDoYouDo('retired', 'Mark'));
 
+=======
+/***
+ *  Function statements and expressions
+ 
+
+ // Function declaration
+ // function whatDoYouDo(job, firstName) {}
+
+ // Function expression
+ var whatDoYouDo = function(job, firstName) {
+   switch(job) {
+     case 'teacher':
+       return firstName + ' teaches kids how to code';
+     case 'driver':
+        return firstName + ' drives an uber in Lisbon.';
+     case 'designer':
+        return firstName + ' designs beautiful websites.';
+     default:
+        return firstName + ' does something else.';
+   }
+ }
+
+ console.log(whatDoYouDo('fuckall', 'John'));
+
+/**
+ * Arrays
+ 
+
+ // initialize array
+ var names = ['john', 'mark', 'jane'];
+ var years = new Array(1990, 1969, 1948);
+
+ console.log(names[0]);
+ console.log(names);
+ console.log(names.length);
+
+ // mutate array
+ names[1] = 'Ben';
+ names[names.length] = 'Mary';
+ console.log(names);
+
+ // different data types
+var john = ['john', 'smith', 1990, 'teacher', false];
+
+john.push('blue');
+john.unshift('Mr.');
+john.pop();
+john.shift();
+
+
+console.log(john);
+
+console.log(john.indexOf(false));
+
+var isDesigner = john.indexOf('teacher') === -1 ? 'John is NOT a designer' : 'John is a designer';
+console.log(isDesigner);
+
+/******
+ * Coding challenge 2
+ * 
+ 
+
+ var bills = [124, 48, 268];
+
+ function tipCalculator (bill) {
+   if (bill < 50) {
+     return bill * .2;
+   } else if (bill >= 50 && bill <= 200) {
+     return bill * .15;
+   } else {
+     return bill * .1;
+   }
+ }
+
+ // console.log(tipCalculator(10));
+
+ var tips = [tipCalculator(bills[0]), tipCalculator(bills[1]), tipCalculator(bills[2])]
+ console.log(tips);
+ var total = [(tipCalculator(bills[0]) + bills[0]), (tipCalculator(bills[1]) + bills[1]), (tipCalculator(bills[2]) + bills[2])]
+ console.log(total);
+
+*/
