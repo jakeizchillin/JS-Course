@@ -320,7 +320,7 @@ if (height == '23') {
 /**
  * Function statements and expressions
  * 
- */
+ 
 
  // Function declaration
 // function whatDoYouDo(job, firstName) {}
@@ -401,7 +401,7 @@ var isDesigner = john.indexOf('teacher') === -1 ? 'John is NOT a designer' : 'Jo
 console.log(isDesigner);
 
 /******
- * Coding challenge 2
+ * Coding challenge 3
  * 
  
 
@@ -425,3 +425,33 @@ console.log(isDesigner);
  console.log(total);
 
 */
+
+/**
+ * Objects and Properties
+ */
+
+ // Object literal
+ var john = {
+   firstName: 'John',
+   lastName: 'Smith',
+   birthYear: '1990',
+   family: ['Jane', 'Mark', 'Bob', 'Emily'],
+   job: 'teacher',
+   isMarried: false
+ };
+
+ console.log(john.firstName);
+ console.log(john['lastName']);
+ var x = 'birthYear';
+ console.log(john[x]);
+
+ john.job = 'designer';
+ john['isMarried'] = true;
+ console.log(john);
+
+ // new Object syntax
+ var jane = new Object();
+ jane.name = 'Jane';
+ jane.birthYear = '1969';
+ jane['lastName'] = 'Smith';
+ console.log(jane);
