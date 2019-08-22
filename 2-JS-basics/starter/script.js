@@ -460,7 +460,7 @@ console.log(isDesigner);
 
  /*
  * Objects and methods
- * 
+ 
 
 var john = {
   firstName: 'John',
@@ -470,11 +470,49 @@ var john = {
   job: 'teacher',
   isMarried: false,
   calcAge: function(birthYear) {
-    this.age = 2018 - this.birthYear;
+    this.age = 2018 - this.birthYear
   }
 };  
 
 john.calcAge();
 console.log(john);
 
-*/
+
+
+/**
+ * Coding challenge 4 
+
+
+ var john = {
+   fullName: 'John Smith',
+   mass: 100,
+   height: 2,
+   calcBMI: function() {
+     this.BMI = this.mass / (this.height * this.height)
+     return this.BMI
+   }
+ };
+
+ john.calcBMI();
+console.log(john);
+
+var mark = {
+  fullName: 'Mark Anthony',
+  mass: 110,
+  height: 2,
+  calcBMI: function() {
+    this.BMI = this.mass / (this.height * this.height);
+    return this.BMI
+  }
+};
+
+mark.calcBMI();
+console.log(mark.BMI);
+// if (john.calcBMI() > mark.calcBMI())  - can remove 509 and 496
+if (john.BMI > mark.BMI) {
+  console.log(john.fullName + ' has a greater BMI at ' + john.BMI + '.');
+} else if (john.BMI < mark.BMI) {
+  console.log(mark.fullName + ' has a greater BMI at ' + mark.BMI + '.');
+} else {
+  console.log(john.fullName + ' and ' + mark.fullName + ' have the same BMI at ' + mark.BMI + '.');
+}
